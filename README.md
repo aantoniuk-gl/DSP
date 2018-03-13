@@ -1,7 +1,7 @@
 Dsp
 ======
 
-#DSP simulation system:
+# DSP simulation system:
 * create OpenRtb Bid object 
 * receive Win and Billing notifications
 * when system receive Win and Billing notification generate Payment event 
@@ -13,9 +13,9 @@ Dsp
 # How to run 
 `bash run.sh N`, where N is number of DSP instances
 
-All instances will e running on ports from 8081 to 808N  
+All instances will be running on ports from 8081 to 808N  
 
-Example `bash run.sh 5`. Five intanses will be running:
+Example `bash run.sh 5`. Five instances will be running:
 * java -jar target/crypto.poc.dsp-1.0-SNAPSHOT.jar --server.port=8081 
 * java -jar target/crypto.poc.dsp-1.0-SNAPSHOT.jar --server.port=8082 
 * java -jar target/crypto.poc.dsp-1.0-SNAPSHOT.jar --server.port=8083 
@@ -30,11 +30,11 @@ Example `bash run.sh 5`. Five intanses will be running:
 * Example: `\bid\1`
 * Response: OpenRtb Bid object 
 `id: "4b08b09d-236d-4921-ad39-220dae3a67d9",
- impid: "2",
+ impid: "1",
  price: 91.0,
- nurl: "http://127.0.1.1:8082/win/2",
+ nurl: "http://127.0.1.1:8082/win/1",
  iurl: "https://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
- burl: "http://127.0.1.1:8082/billing/2"`
+ burl: "http://127.0.1.1:8082/billing/1"`
 
 ## Receive Win Notification:
 * Method: GET
